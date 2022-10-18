@@ -21,13 +21,13 @@ return (1);
 	}
 	if (int_input < 0)
 	{
-		int_input = (int_inpu * -1) - 1;
+		int_input = (int_input * -1) - 1;
 		isnegative = 1;
 	}
 	binary = malloc(sizeof(char) * (32 + 1));
 	binary = fill_binary_array(binary, int_input, isnegative, 32);
 	first_one = 0;
-	for (coount = i = 0; binary[i]; i++)
+	for (count = i = 0; binary[i]; i++)
 	{
 		if (first_one == 0 && binary[i] == '1')
 			first_one = 1;

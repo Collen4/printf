@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * handl_buf - concatenates the buffer characters

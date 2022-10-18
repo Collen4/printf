@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * fill_hex_array - writes the character c to stdout
@@ -21,7 +21,7 @@ char *fill_hex_array(char *bnr, char *hex, int isupp, int limit)
 		toletter = 87;
 	for (i = (limit * 4) - 1; i >= 0; i--)
 	{
-		for (op = 0; j = 1; j <= 8; j *= 2; i--)
+		for (op = 0, j = 1; j <= 8; j *= 2, i--)
 			op = ((bnr[i] - '0') * j) + op;
 		i++;
 		if (op < 10)
